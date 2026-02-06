@@ -1,1 +1,229 @@
-<h1> my name is kamala neupane .........</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ColorWear Shop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 20px;
+    }
+
+    nav a:hover {
+      background: #ff6a00;
+      color: white;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0 5px;
+    }
+
+    .price {
+      color: #ee0979;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🛍️ ColorWear</h1>
+  <p>Trendy Clothes for Everyone</p>
+</header>
+
+<nav>
+  <a href="#men">Men</a>
+  <a href="#women">Women</a>
+  <a href="#tshirts">T-Shirts</a>
+  <a href="#shoes">Shoes</a>
+</nav>
+
+<div class="container">
+
+  <!-- MEN -->
+  <h2 id="men">👔 Men's Collection</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47" alt="Men Shirt">
+      <div class="card-content">
+        <h3>Men Shirt</h3>
+        <div class="price">$35</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10" alt="Men Jacket">
+      <div class="card-content">
+        <h3>Men Jacket</h3>
+        <div class="price">$65</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WOMEN -->
+  <h2 id="women">👗 Women's Collection</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="Women Dress">
+      <div class="card-content">
+        <h3>Women Dress</h3>
+        <div class="price">$45</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Women Top">
+      <div class="card-content">
+        <h3>Stylish Top</h3>
+        <div class="price">$30</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- T-SHIRTS -->
+  <h2 id="tshirts">👕 T-Shirts</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="Tshirt">
+      <div class="card-content">
+        <h3>Graphic T-Shirt</h3>
+        <div class="price">$20</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618354691373-3c0a6d1a1f4d" alt="Tshirt">
+      <div class="card-content">
+        <h3>Casual T-Shirt</h3>
+        <div class="price">$18</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOES -->
+  <h2 id="shoes">👟 Shoes</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Shoes">
+      <div class="card-content">
+        <h3>Running Shoes</h3>
+        <div class="price">$70</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" alt="Sneakers">
+      <div class="card-content">
+        <h3>Stylish Sneakers</h3>
+        <div class="price">$80</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 ColorWear | Fashion for All
+</footer>
+
+</body>
+</html>
+
